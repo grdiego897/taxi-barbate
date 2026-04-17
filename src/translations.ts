@@ -46,7 +46,7 @@ export const translations = {
       location: 'Ubicación',
       bookTitle: 'Reserva Rápida',
       bookDesc: 'La forma más rápida de reservar es llamándonos o enviando un mensaje por WhatsApp.',
-      footer: '© 2024 Taxi Barbate - Diego Gallardo. Todos los derechos reservados.',
+      footer: '© 2026 Taxi Barbate - Diego Gallardo. Todos los derechos reservados.',
     },
     calculator: {
       title: 'Calculadora de Precios',
@@ -140,7 +140,7 @@ export const translations = {
       location: 'Location',
       bookTitle: 'Quick Booking',
       bookDesc: 'The fastest way to book is by giving us a call or sending a WhatsApp.',
-      footer: '© 2024 Taxi Barbate - Diego Gallardo. All rights reserved.',
+      footer: '© 2026 Taxi Barbate - Diego Gallardo. All rights reserved.',
     },
     calculator: {
       title: 'Fare Calculator',
@@ -158,7 +158,7 @@ export const translations = {
       trip: 'Client journey',
       returnBase: 'Return to Barbate',
       totalDist: 'Total kilometers',
-      note: '* Approximate price. Tolls not included. Contact us for the exact price.',
+      note: '* Approximate price. Please contact us for the exact fare.',
       groups: {
         airports: 'Airports',
         stations: 'Train Stations',
@@ -234,7 +234,7 @@ export const translations = {
       location: 'Standort',
       bookTitle: 'Schnelle Buchung',
       bookDesc: 'Am schnellsten buchen Sie, indem Sie uns anrufen oder eine WhatsApp senden.',
-      footer: '© 2024 Taxi Barbate - Diego Gallardo. Alle Rechte vorbehalten.',
+      footer: '© 2026 Taxi Barbate - Diego Gallardo. Alle Rechte vorbehalten.',
     },
     calculator: {
       title: 'Tarifrechner',
@@ -252,7 +252,7 @@ export const translations = {
       trip: 'Kundenreise',
       returnBase: 'Rückfahrt nach Barbate',
       totalDist: 'Gesamtkilometer',
-      note: '* Ungefährer Preis. Mautgebühren nicht inbegriffen. Kontaktieren Sie uns für den genauen Preis.',
+      note: '* Ungefähre Preisangabe. Bitte kontaktieren Sie uns für den genauen Fahrpreis.',
       groups: {
         airports: 'Flughäfen',
         stations: 'Bahnhöfe',
