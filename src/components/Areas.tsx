@@ -1,6 +1,9 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { motion } from 'motion/react';
+import canosImage from '../../img/canos.jpg';
+import zaharaImage from '../../img/zahara.jpg';
+import zahoraImage from '../../img/zahora.jpg';
 
 export default function Areas() {
   const { t } = useLanguage();
@@ -10,6 +13,12 @@ export default function Areas() {
     t.areas.zahara,
     t.areas.canos,
     t.areas.zahora,
+  ];
+
+  const featuredAreas = [
+    { name: t.areas.canos, image: canosImage },
+    { name: t.areas.zahara, image: zaharaImage },
+    { name: t.areas.zahora, image: zahoraImage },
   ];
 
   return (
@@ -36,15 +45,25 @@ export default function Areas() {
               </p>
             </div>
 
-            <div className="hidden lg:block">
-              <div className="w-24 h-24 rounded-full border-2 border-brand-green flex items-center justify-center mt-16 overflow-hidden">
-                <img 
-                  src="https://picsum.photos/seed/map-cadiz/200/200?grayscale" 
-                  alt="Map Location" 
-                  className="w-full h-full object-cover mix-blend-multiply opacity-60"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
+            <div className="mt-12 flex flex-nowrap items-center justify-between gap-2 sm:justify-start sm:gap-3">
+              {featuredAreas.map((area, index) => (
+                <motion.div
+                  key={area.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '-50px' }}
+                  transition={{ delay: 0.2 + index * 0.1 }}
+                  className="flex flex-1 min-w-0 items-center sm:flex-none"
+                >
+                  <div className="w-full aspect-square rounded-[1.75rem] border-2 border-brand-green shadow-[0_10px_30px_rgba(2,44,34,0.08)] overflow-hidden sm:w-32 sm:h-32">
+                    <img
+                      src={area.image}
+                      alt={area.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
 

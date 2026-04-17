@@ -64,7 +64,7 @@ export const translations = {
       trip: 'Trayecto del cliente',
       returnBase: 'Retorno a Barbate',
       totalDist: 'Total de kilómetros',
-      note: '* Precio aproximado. Peajes no incluidos. Contacte para precio exacto.',
+      note: '* Precio aproximado. Contacte para precio exacto.',
       groups: {
         airports: 'Aeropuertos',
         stations: 'Estaciones de Tren',
