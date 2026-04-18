@@ -2,7 +2,7 @@ import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { motion } from 'motion/react';
 import { Phone, MessageCircle } from 'lucide-react';
-import heroBackground from '../../foto.webp';
+import heroBackground from '../playa.png';
 
 export default function Hero() {
   const { t } = useLanguage();

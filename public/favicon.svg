@@ -1,0 +1,22 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  fill="none"
+>
+  <path
+    d="M6 40C6 47 11 50 18 50H46C53 50 58 47 58 40L53 22C51 14 46 10 40 10H24C18 10 13 14 11 22Z"
+    fill="#059669"
+  />
+  <text
+    x="32"
+    y="37.5"
+    fill="#FFFFFF"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="15"
+    font-weight="700"
+    letter-spacing="0.04em"
+    text-anchor="middle"
+  >
+    TAXI
+  </text>
+</svg>

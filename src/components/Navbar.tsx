@@ -19,7 +19,7 @@ const TaxiIcon = ({ className }: { className?: string }) => (
     <text 
       x="18" 
       y="12.5" 
-      fontSize="5" 
+      fontSize="7.2" 
       fontWeight="700" 
       letterSpacing="0.15em" 
       textAnchor="middle" 

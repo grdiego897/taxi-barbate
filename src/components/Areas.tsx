@@ -1,9 +1,9 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { motion } from 'motion/react';
-import canosImage from '../../img/canos.jpg';
-import zaharaImage from '../../img/zahara.jpg';
-import zahoraImage from '../../img/zahora.jpg';
+import canosImage from '../../img/canos.png';
+import zaharaImage from '../../img/zahara.png';
+import zahoraImage from '../../img/zahora.png';
 
 export default function Areas() {
   const { t } = useLanguage();
