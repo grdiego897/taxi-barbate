@@ -31,7 +31,7 @@ export default function Hero() {
           <h1 className="font-display font-medium text-5xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tight text-brand-dark mb-6 uppercase">
             {t.hero.headline}
           </h1>
-          <p className="text-lg md:text-2xl font-light text-brand-dark/80 max-w-2xl mx-auto mb-10">
+          <p className="text-lg md:text-2xl font-light text-brand-dark max-w-2xl mx-auto mb-10">
             {t.hero.subheadline}
           </p>
 
