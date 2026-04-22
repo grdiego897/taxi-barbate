@@ -8,17 +8,11 @@ import {
 } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { vehicleGallery } from '../config/vehicleGallery';
 
 const benefitIcons = [Clock3, BadgeEuro, CreditCard, Plane, Baby, ShieldCheck];
 
 export default function ServiceOverview() {
   const { t } = useLanguage();
-
-  const galleryItems = vehicleGallery.map((src) => ({
-    src,
-    alt: t.serviceOverview.imageAlt,
-  }));
 
   return (
     <section id="services" className="relative isolate overflow-hidden border-t border-brand-dark/5 bg-white py-14 md:py-16">
@@ -29,12 +23,9 @@ export default function ServiceOverview() {
           viewport={{ once: true, margin: '-40px' }}
           className="relative"
         >
-          <div className="grid grid-cols-1 gap-8 xl:grid-cols-[minmax(0,1.1fr)_minmax(260px,0.9fr)] xl:items-start">
+          <div className="grid grid-cols-1 gap-8 xl:grid-cols-1 xl:items-start">
             <div>
               <div className="mb-5 max-w-3xl md:mb-6">
-                <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.26em] text-brand-green-dark/85 md:text-[11px]">
-                  {t.serviceOverview.reasonsLabel}
-                </p>
                 <h2 className="font-display text-[2rem] leading-none tracking-[-0.04em] text-brand-dark md:text-[3.25rem] xl:text-[3.7rem]">
                   {t.benefits.title}
                 </h2>
@@ -72,33 +63,7 @@ export default function ServiceOverview() {
               </div>
             </div>
 
-            <motion.aside
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-40px' }}
-              transition={{ delay: 0.14 }}
-              className="relative"
-            >
-              <div className="grid gap-3">
-                {galleryItems.map((image, index) => (
-                  <motion.div
-                    key={image.src}
-                    initial={{ opacity: 0, y: 18 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: '-20px' }}
-                    transition={{ delay: 0.12 + index * 0.08 }}
-                    className="relative"
-                  >
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className={`w-full object-contain object-center ${image.src.includes('taxiinside') ? 'rounded-[1rem]' : ''}`}
-                      style={{ filter: 'drop-shadow(0 14px 22px rgba(2,44,34,0.14)) saturate(1.02) contrast(1.02) blur(0.2px)' }}
-                    />
-                  </motion.div>
-                ))}
-              </div>
-            </motion.aside>
+
           </div>
         </motion.div>
       </div>

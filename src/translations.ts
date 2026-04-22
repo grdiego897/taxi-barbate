@@ -5,7 +5,7 @@ export const translations = {
     seo: {
       title: 'Taxi Barbate | Reservas, aeropuerto y estaciones | Diego Gallardo',
       description:
-        'Taxi en Barbate con reserva previa. Servicio en Barbate, Zahara de los Atunes, Canos de Meca y Zahora. Precio cerrado, pagos con tarjeta, Bizum, Google Pay y Apple Pay.',
+        'Taxi en Barbate con reserva previa. Servicio en Barbate, Zahara de los Atunes, Caños de Meca y Zahora. Precio cerrado, pagos con tarjeta, Bizum, Google Pay y Apple Pay.',
     },
     nav: {
       services: 'Servicios',
@@ -15,10 +15,9 @@ export const translations = {
       book: 'Reservar',
     },
     hero: {
-      kicker: 'Barbate, Zahara de los Atunes, Canos de Meca y Zahora',
+      kicker: 'Barbate, Zahara de los Atunes, Caños de Meca y Zahora',
       headline: 'Taxi Barbate',
-      subheadline:
-        'Servicio de taxi con reserva previa, precio cerrado y traslados a aeropuertos y estaciones en la Costa de la Luz.',
+      subheadline: 'Taxi con reserva previa, precio cerrado y traslados a aeropuertos',
       cta: 'Llamar a Diego',
       whatsapp: 'WhatsApp',
     },
@@ -32,7 +31,7 @@ export const translations = {
       galleryLabel: 'Vehiculo y confort',
       galleryTitle: 'Taxi Barbate preparado para reservas previas y trayectos largos',
       galleryDesc:
-        'Vehiculo amplio, trato directo y servicio pensado para moverte con comodidad entre Barbate, Zahara, Canos de Meca, Zahora y conexiones con aeropuerto o estacion.',
+        'Vehiculo amplio, trato directo y servicio pensado para moverte con comodidad entre Barbate, Zahara, Caños de Meca, Zahora y conexiones con aeropuerto o estacion.',
       imageAlt: 'Coche de Taxi Barbate listo para un servicio con reserva previa',
       stats: ['Reserva previa 24h', 'Precio cerrado', 'Tarjeta, Bizum y wallet'],
       primaryCta: 'Ver precio orientativo',
@@ -68,7 +67,7 @@ export const translations = {
         },
         {
           title: 'Cobertura local real',
-          desc: 'Trabajamos de forma habitual en Barbate, Zahara de los Atunes, Canos de Meca y Zahora.',
+          desc: 'Trabajamos de forma habitual en Barbate, Zahara de los Atunes, Caños de Meca y Zahora.',
         },
       ],
     },
@@ -114,7 +113,7 @@ export const translations = {
           desc: 'Recogidas y traslados entre dos de las zonas con mas demanda de la comarca.',
         },
         {
-          title: 'Taxi Canos de Meca - Barbate',
+          title: 'Taxi Caños de Meca - Barbate',
           desc: 'Una ruta frecuente en temporada alta, escapadas y reservas de ultima hora.',
         },
       ],
@@ -144,7 +143,7 @@ export const translations = {
       places: {
         Barbate: 'Barbate',
         'Zahara de los Atunes': 'Zahara de los Atunes',
-        'Canos de Meca': 'Canos de Meca',
+        'Caños de Meca': 'Caños de Meca',
         'Malaga Airport': 'Aeropuerto de Malaga',
         'Seville Airport': 'Aeropuerto de Sevilla',
         'Jerez Airport': 'Aeropuerto de Jerez',
@@ -170,7 +169,7 @@ export const translations = {
       title: 'Zonas de servicio principal',
       barbate: 'Barbate',
       zahara: 'Zahara de los Atunes',
-      canos: 'Canos de Meca',
+      canos: 'Caños de Meca',
       zahora: 'Zahora',
       desc: 'Servicio habitual en Barbate y alrededores. Recogidas 24 horas con reserva previa y cobertura especializada en La Janda.',
     },
@@ -180,7 +179,7 @@ export const translations = {
         'Resuelve las dudas mas habituales antes de reservar tu taxi en Barbate o en cualquiera de las zonas cercanas.',
       items: [
         {
-          question: 'Trabajais en Barbate, Zahara de los Atunes, Canos de Meca y Zahora?',
+          question: 'Trabajais en Barbate, Zahara de los Atunes, Caños de Meca y Zahora?',
           answer:
             'Si. Esas son algunas de las zonas donde trabajamos con mas frecuencia, tanto para trayectos locales como para reservas hacia aeropuertos, estaciones y otras ciudades.',
         },
@@ -224,7 +223,7 @@ export const translations = {
       location: 'Ubicacion',
       bookTitle: 'Reserva rapida',
       bookDesc:
-        'Confirma por telefono o WhatsApp tu taxi en Barbate, Zahara de los Atunes, Canos de Meca o Zahora. Tambien organizamos traslados con precio cerrado a aeropuertos y estaciones.',
+        'Confirma por telefono o WhatsApp tu taxi en Barbate, Zahara de los Atunes, Caños de Meca o Zahora. Tambien organizamos traslados con precio cerrado a aeropuertos y estaciones.',
       footer: '© 2026 Taxi Barbate - Diego Gallardo. Todos los derechos reservados.',
     },
   },
@@ -232,7 +231,7 @@ export const translations = {
     seo: {
       title: 'Taxi Barbate | Airport and station transfers | Diego Gallardo',
       description:
-        'Taxi in Barbate by advance booking. Service in Barbate, Zahara de los Atunes, Canos de Meca and Zahora with fixed prices, card payments and airport transfers.',
+        'Taxi in Barbate by advance booking. Service in Barbate, Zahara de los Atunes, Caños de Meca and Zahora with fixed prices, card payments and airport transfers.',
     },
     nav: {
       services: 'Services',
@@ -242,10 +241,9 @@ export const translations = {
       book: 'Book now',
     },
     hero: {
-      kicker: 'Barbate, Zahara de los Atunes, Canos de Meca and Zahora',
+      kicker: 'Barbate, Zahara de los Atunes, Caños de Meca and Zahora',
       headline: 'Taxi Barbate',
-      subheadline:
-        'Advance-booked taxi service with fixed prices plus airport and station transfers across Costa de la Luz.',
+      subheadline: 'Advance-booked taxi with fixed prices and airport transfers',
       cta: 'Call Diego',
       whatsapp: 'WhatsApp',
     },
@@ -259,7 +257,7 @@ export const translations = {
       galleryLabel: 'Vehicle and comfort',
       galleryTitle: 'Taxi Barbate ready for advance bookings and longer transfers',
       galleryDesc:
-        'A spacious vehicle, direct communication and a service built for comfortable journeys between Barbate, Zahara, Canos de Meca, Zahora and airport or station connections.',
+        'A spacious vehicle, direct communication and a service built for comfortable journeys between Barbate, Zahara, Caños de Meca, Zahora and airport or station connections.',
       imageAlt: 'Taxi Barbate vehicle ready for an advance-booked service',
       stats: ['24/7 by booking', 'Fixed prices', 'Card, Bizum and wallet'],
       primaryCta: 'See estimated fare',
@@ -295,7 +293,7 @@ export const translations = {
         },
         {
           title: 'Real local coverage',
-          desc: 'We regularly work in Barbate, Zahara de los Atunes, Canos de Meca and Zahora.',
+          desc: 'We regularly work in Barbate, Zahara de los Atunes, Caños de Meca and Zahora.',
         },
       ],
     },
@@ -341,7 +339,7 @@ export const translations = {
           desc: 'Regular pickups and transfers between two of the area’s busiest coastal spots.',
         },
         {
-          title: 'Canos de Meca taxi to Barbate',
+          title: 'Caños de Meca taxi to Barbate',
           desc: 'A frequent route in high season, short breaks and pre-booked pickups.',
         },
       ],
@@ -371,7 +369,7 @@ export const translations = {
       places: {
         Barbate: 'Barbate',
         'Zahara de los Atunes': 'Zahara de los Atunes',
-        'Canos de Meca': 'Canos de Meca',
+        'Caños de Meca': 'Caños de Meca',
         'Malaga Airport': 'Malaga Airport',
         'Seville Airport': 'Seville Airport',
         'Jerez Airport': 'Jerez Airport',
@@ -397,7 +395,7 @@ export const translations = {
       title: 'Main service areas',
       barbate: 'Barbate',
       zahara: 'Zahara de los Atunes',
-      canos: 'Canos de Meca',
+      canos: 'Caños de Meca',
       zahora: 'Zahora',
       desc: 'Regular service in Barbate and nearby areas. Pickups are available 24/7 with advance booking and local knowledge of La Janda.',
     },
@@ -406,7 +404,7 @@ export const translations = {
       subtitle: 'The most common questions before booking a taxi in Barbate or nearby areas.',
       items: [
         {
-          question: 'Do you work in Barbate, Zahara de los Atunes, Canos de Meca and Zahora?',
+          question: 'Do you work in Barbate, Zahara de los Atunes, Caños de Meca and Zahora?',
           answer:
             'Yes. These are some of the areas where we work most often, both for local journeys and for bookings to airports, stations and other cities.',
         },
@@ -450,7 +448,7 @@ export const translations = {
       location: 'Location',
       bookTitle: 'Quick booking',
       bookDesc:
-        'Book by phone or WhatsApp for taxi services in Barbate, Zahara de los Atunes, Canos de Meca or Zahora. We also organise fixed-price transfers to airports and stations.',
+        'Book by phone or WhatsApp for taxi services in Barbate, Zahara de los Atunes, Caños de Meca or Zahora. We also organise fixed-price transfers to airports and stations.',
       footer: '© 2026 Taxi Barbate - Diego Gallardo. All rights reserved.',
     },
   },
@@ -458,7 +456,7 @@ export const translations = {
     seo: {
       title: 'Taxi Barbate | Flughafen- und Bahnhoftransfer | Diego Gallardo',
       description:
-        'Taxi in Barbate mit Vorbestellung. Service in Barbate, Zahara de los Atunes, Canos de Meca und Zahora mit Festpreis, Kartenzahlung und Transfers zu Flughafen und Bahnhof.',
+        'Taxi in Barbate mit Vorbestellung. Service in Barbate, Zahara de los Atunes, Caños de Meca und Zahora mit Festpreis, Kartenzahlung und Transfers zu Flughafen und Bahnhof.',
     },
     nav: {
       services: 'Leistungen',
@@ -468,10 +466,9 @@ export const translations = {
       book: 'Buchen',
     },
     hero: {
-      kicker: 'Barbate, Zahara de los Atunes, Canos de Meca und Zahora',
+      kicker: 'Barbate, Zahara de los Atunes, Caños de Meca und Zahora',
       headline: 'Taxi Barbate',
-      subheadline:
-        'Taxi mit Vorbestellung, Festpreis sowie Transfers zu Flughafen und Bahnhof an der Costa de la Luz.',
+      subheadline: 'Taxi mit Vorbestellung, Festpreis und Flughafen-Transfers',
       cta: 'Diego anrufen',
       whatsapp: 'WhatsApp',
     },
@@ -485,7 +482,7 @@ export const translations = {
       galleryLabel: 'Fahrzeug und Komfort',
       galleryTitle: 'Taxi Barbate fur Vorbestellungen und langere Fahrten',
       galleryDesc:
-        'Geraumiges Fahrzeug, direkter Kontakt und ein Service fur komfortable Fahrten zwischen Barbate, Zahara, Canos de Meca, Zahora sowie zu Flughafen und Bahnhof.',
+        'Geraumiges Fahrzeug, direkter Kontakt und ein Service fur komfortable Fahrten zwischen Barbate, Zahara, Caños de Meca, Zahora sowie zu Flughafen und Bahnhof.',
       imageAlt: 'Fahrzeug von Taxi Barbate fur einen reservierten Transfer',
       stats: ['24/7 mit Vorbestellung', 'Festpreis', 'Karte, Bizum und Wallet'],
       primaryCta: 'Preis ansehen',
@@ -521,7 +518,7 @@ export const translations = {
         },
         {
           title: 'Lokale Abdeckung',
-          desc: 'Wir arbeiten regelmassig in Barbate, Zahara de los Atunes, Canos de Meca und Zahora.',
+          desc: 'Wir arbeiten regelmassig in Barbate, Zahara de los Atunes, Caños de Meca und Zahora.',
         },
       ],
     },
@@ -567,7 +564,7 @@ export const translations = {
           desc: 'Regelmassige Fahrten zwischen zwei stark nachgefragten Kustenorten.',
         },
         {
-          title: 'Taxi Canos de Meca - Barbate',
+          title: 'Taxi Caños de Meca - Barbate',
           desc: 'Eine typische Strecke in der Hochsaison, fur Kurztrips und Vorbestellungen.',
         },
       ],
@@ -597,7 +594,7 @@ export const translations = {
       places: {
         Barbate: 'Barbate',
         'Zahara de los Atunes': 'Zahara de los Atunes',
-        'Canos de Meca': 'Canos de Meca',
+        'Caños de Meca': 'Caños de Meca',
         'Malaga Airport': 'Flughafen Malaga',
         'Seville Airport': 'Flughafen Sevilla',
         'Jerez Airport': 'Flughafen Jerez',
@@ -623,7 +620,7 @@ export const translations = {
       title: 'Wichtige Einsatzgebiete',
       barbate: 'Barbate',
       zahara: 'Zahara de los Atunes',
-      canos: 'Canos de Meca',
+      canos: 'Caños de Meca',
       zahora: 'Zahora',
       desc: 'Regelmassiger Service in Barbate und Umgebung. Abholungen rund um die Uhr mit Vorbestellung und lokaler Erfahrung in La Janda.',
     },
@@ -632,7 +629,7 @@ export const translations = {
       subtitle: 'Die wichtigsten Fragen vor einer Taxibuchung in Barbate oder in der Umgebung.',
       items: [
         {
-          question: 'Arbeiten Sie in Barbate, Zahara de los Atunes, Canos de Meca und Zahora?',
+          question: 'Arbeiten Sie in Barbate, Zahara de los Atunes, Caños de Meca und Zahora?',
           answer:
             'Ja. Dort fahren wir besonders haufig, sowohl fur lokale Strecken als auch fur Reservierungen zu Flughafen, Bahnhofen und anderen Stadten.',
         },
@@ -676,7 +673,7 @@ export const translations = {
       location: 'Standort',
       bookTitle: 'Schnelle Reservierung',
       bookDesc:
-        'Reservieren Sie telefonisch oder per WhatsApp fur Barbate, Zahara de los Atunes, Canos de Meca oder Zahora. Wir organisieren auch Festpreis-Transfers zu Flughafen und Bahnhof.',
+        'Reservieren Sie telefonisch oder per WhatsApp fur Barbate, Zahara de los Atunes, Caños de Meca oder Zahora. Wir organisieren auch Festpreis-Transfers zu Flughafen und Bahnhof.',
       footer: '© 2026 Taxi Barbate - Diego Gallardo. Alle Rechte vorbehalten.',
     },
   },

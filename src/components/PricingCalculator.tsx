@@ -29,7 +29,7 @@ const distances: Record<string, Record<string, number>> = {
     Malaga: 195,
     Seville: 160,
     'Jerez de la Frontera': 80,
-    'Canos de Meca': 10,
+    'Caños de Meca': 10,
     Barbate: 0,
     'Zahara de los Atunes': 12,
     Atlanterra: 16,
@@ -52,7 +52,7 @@ const distances: Record<string, Record<string, number>> = {
     Malaga: 185,
     Seville: 170,
     'Jerez de la Frontera': 90,
-    'Canos de Meca': 22,
+    'Caños de Meca': 22,
     Barbate: 12,
     'Zahara de los Atunes': 0,
     Atlanterra: 4,
@@ -62,7 +62,7 @@ const distances: Record<string, Record<string, number>> = {
     'Vejer de la Frontera': 20,
     Montenmedio: 15,
   },
-  'Canos de Meca': {
+  'Caños de Meca': {
     'Malaga Airport': 200,
     'Seville Airport': 155,
     'Jerez Airport': 80,
@@ -75,7 +75,7 @@ const distances: Record<string, Record<string, number>> = {
     Malaga: 205,
     Seville: 150,
     'Jerez de la Frontera': 70,
-    'Canos de Meca': 0,
+    'Caños de Meca': 0,
     Barbate: 10,
     'Zahara de los Atunes': 22,
     Atlanterra: 26,
@@ -116,7 +116,7 @@ const DESTINATION_GROUPS = [
       'Malaga',
       'Seville',
       'Jerez de la Frontera',
-      'Canos de Meca',
+      'Caños de Meca',
       'Barbate',
       'Zahara de los Atunes',
       'Atlanterra',
@@ -393,18 +393,6 @@ export default function PricingCalculator() {
 
                   <div className="text-center md:text-right max-w-[260px]">
                     <p className="text-xs text-brand-dark/60 italic leading-relaxed mb-2">{t.calculator.note}</p>
-                    <p className="text-xs uppercase tracking-wide text-brand-dark/50">
-                      {t.calculator.baseToOrigin}: {breakdown.distToOrigin} km
-                    </p>
-                    <p className="text-xs uppercase tracking-wide text-brand-dark/50">
-                      {t.calculator.trip}: {breakdown.distTrip} km
-                    </p>
-                    <p className="text-xs uppercase tracking-wide text-brand-dark/50">
-                      {t.calculator.returnBase}: {breakdown.distReturn} km
-                    </p>
-                    <p className="text-xs uppercase tracking-wide text-brand-dark/70 mt-1">
-                      {t.calculator.totalDist}: {breakdown.totalKms} km
-                    </p>
                   </div>
                 </div>
               </motion.div>

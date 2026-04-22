@@ -13,7 +13,7 @@ const routeSelections: CalculatorRouteSelection[] = [
   { origin: 'Barbate', destination: 'Malaga Airport' },
   { origin: 'Barbate', destination: 'Cadiz Station' },
   { origin: 'Zahara de los Atunes', destination: 'Barbate' },
-  { origin: 'Canos de Meca', destination: 'Barbate' },
+  { origin: 'Caños de Meca', destination: 'Barbate' },
 ];
 
 export default function PopularRoutes() {

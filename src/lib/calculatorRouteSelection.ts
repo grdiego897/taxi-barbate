@@ -1,7 +1,7 @@
 export type CalculatorPlace =
   | 'Barbate'
   | 'Zahara de los Atunes'
-  | 'Canos de Meca'
+  | 'Caños de Meca'
   | 'Malaga Airport'
   | 'Seville Airport'
   | 'Jerez Airport'

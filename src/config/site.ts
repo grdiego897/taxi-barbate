@@ -7,7 +7,7 @@ export const DEFAULT_SITE_URL = 'https://grdiego897.github.io/taxi-barbate';
 export const SERVICE_AREAS = [
   'Barbate',
   'Zahara de los Atunes',
-  'Canos de Meca',
+  'Caños de Meca',
   'Zahora',
 ] as const;
 
