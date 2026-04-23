@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { MessageCircle, Phone } from 'lucide-react';
-import heroBackground from '../playa.png';
+import heroBackgroundWebp from '../playa.webp';
+import heroBackgroundPng from '../playa.png';
 import { PHONE_NUMBER, WHATSAPP_URL } from '../config/site';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -11,11 +12,16 @@ export default function Hero() {
   return (
     <section className="relative h-screen min-h-[680px] flex items-center justify-center overflow-hidden bg-brand-white">
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroBackground}
-          alt="Taxi service in Barbate on the Costa de la Luz"
-          className="w-full h-full object-cover scale-105 opacity-80"
-        />
+        <picture>
+          <source srcSet={heroBackgroundWebp} type="image/webp" />
+          <img
+            src={heroBackgroundPng}
+            alt="Taxi service in Barbate on the Costa de la Luz"
+            className="w-full h-full object-cover scale-105 opacity-80"
+            loading="eager"
+            decoding="async"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-b from-brand-white/70 via-brand-green/40 to-brand-white/95" />
       </div>
 
