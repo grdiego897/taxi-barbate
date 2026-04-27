@@ -271,7 +271,7 @@ export default function PricingCalculator() {
               </label>
               <button
                 type="button"
-                className={`w-full flex items-center justify-between bg-brand-white/60 border-2 ${
+                className={`w-full flex items-start justify-between gap-2 bg-brand-white/60 border-2 ${
                   origin ? 'border-brand-green-dark/60 bg-brand-green/5' : 'border-brand-dark/10'
                 } rounded-xl px-4 py-3.5 focus:outline-none focus:border-brand-green-dark transition-all hover:border-brand-green-dark/40`}
                 onClick={() => {
@@ -279,14 +279,14 @@ export default function PricingCalculator() {
                   setDestOpen(false);
                 }}
               >
-                <div className="flex items-center space-x-3 truncate font-medium text-brand-dark">
-                  <MapPin className="w-5 h-5 text-brand-green-dark shrink-0" />
-                  <span className="truncate text-left">
+                <div className="flex items-center gap-3 min-w-0 font-medium text-brand-dark">
+                  <MapPin className="w-5 h-5 text-brand-green-dark shrink-0 self-start mt-0.5" />
+                  <span className="text-left leading-snug">
                     {origin ? getTranslatedPlaceName(origin) : t.calculator.selectOrigin}
                   </span>
                 </div>
                 <ChevronDown
-                  className={`w-5 h-5 text-brand-dark/40 transition-transform shrink-0 ${
+                  className={`w-5 h-5 text-brand-dark/40 transition-transform shrink-0 mt-0.5 ${
                     originOpen ? 'rotate-180' : ''
                   }`}
                 />
@@ -350,7 +350,7 @@ export default function PricingCalculator() {
               </label>
               <button
                 type="button"
-                className={`w-full flex items-center justify-between bg-brand-white/60 border-2 ${
+                className={`w-full flex items-start justify-between gap-2 bg-brand-white/60 border-2 ${
                   destination ? 'border-brand-green-dark/60 bg-brand-green/5' : 'border-brand-dark/10'
                 } rounded-xl px-4 py-3.5 focus:outline-none focus:border-brand-green-dark transition-all hover:border-brand-green-dark/40`}
                 onClick={() => {
@@ -358,14 +358,14 @@ export default function PricingCalculator() {
                   setOriginOpen(false);
                 }}
               >
-                <div className="flex items-center space-x-3 truncate font-medium text-brand-dark">
-                  <MapPin className="w-5 h-5 text-brand-green-dark shrink-0" />
-                  <span className="truncate text-left">
+                <div className="flex items-center gap-3 min-w-0 font-medium text-brand-dark">
+                  <MapPin className="w-5 h-5 text-brand-green-dark shrink-0 self-start mt-0.5" />
+                  <span className="text-left leading-snug">
                     {destination ? getTranslatedPlaceName(destination) : t.calculator.selectDest}
                   </span>
                 </div>
                 <ChevronDown
-                  className={`w-5 h-5 text-brand-dark/40 transition-transform shrink-0 ${
+                  className={`w-5 h-5 text-brand-dark/40 transition-transform shrink-0 mt-0.5 ${
                     destOpen ? 'rotate-180' : ''
                   }`}
                 />
