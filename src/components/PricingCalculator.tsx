@@ -5,7 +5,6 @@ import {
   ArrowRight,
   BadgeEuro,
   CalendarDays,
-  Calculator,
   ChevronDown,
   MapPin,
   MessageCircle,
@@ -228,15 +227,35 @@ export default function PricingCalculator() {
           viewport={{ once: true }}
           className="text-center mb-12 max-w-2xl"
         >
-          <div className="flex justify-center mb-6">
-            <div className="relative w-16 h-16 rounded-2xl bg-white border border-brand-green/40 flex items-center justify-center text-brand-green-dark shadow-[0_8px_24px_rgba(5,150,105,0.18)]">
-              <Calculator className="w-7 h-7" />
+          {/* Route-line icon */}
+          <div className="flex justify-center items-center gap-3 mb-8">
+            <span className="w-2 h-2 rounded-full bg-brand-green-dark/60" />
+            <div className="relative w-16 h-px bg-brand-dark/10 overflow-hidden">
+              <motion.span
+                className="absolute inset-0 bg-brand-green-dark origin-left block"
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+              />
             </div>
+            <span className="font-display text-xl font-light text-brand-green-dark select-none">€</span>
+            <div className="relative w-16 h-px bg-brand-dark/10 overflow-hidden">
+              <motion.span
+                className="absolute inset-0 bg-brand-green-dark origin-left block"
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.35 }}
+              />
+            </div>
+            <span className="w-2 h-2 rounded-full bg-brand-green-dark/60" />
           </div>
-          <h2 className="font-display font-bold text-4xl md:text-5xl tracking-tight mb-4 text-brand-dark">
+
+          <h2 className="font-display font-medium text-4xl md:text-5xl tracking-tight mb-4 text-brand-dark">
             {t.calculator.title}
           </h2>
-          <p className="text-lg text-brand-dark/70 font-light">{t.calculator.subtitle}</p>
+          <p className="text-base md:text-lg text-brand-dark/55 font-light">{t.calculator.subtitle}</p>
         </motion.div>
 
         <motion.div
