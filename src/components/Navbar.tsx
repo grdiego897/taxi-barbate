@@ -107,12 +107,13 @@ export default function Navbar() {
                   key={lang.code}
                   type="button"
                   onClick={() => setLanguage(lang.code)}
-                  className={`text-xs px-2.5 py-1 rounded-full transition-colors ${
-                    language === lang.code ? 'bg-brand-green text-brand-dark font-medium' : 'text-brand-dark/60 hover:text-brand-dark'
+                  className={`text-base px-2 py-0.5 rounded-full transition-all ${
+                    language === lang.code ? 'bg-brand-green scale-110' : 'opacity-50 hover:opacity-80'
                   }`}
                   title={lang.label}
+                  aria-label={lang.label}
                 >
-                  {lang.label}
+                  {lang.flag}
                 </button>
               ))}
             </div>
@@ -173,11 +174,12 @@ export default function Navbar() {
                   key={lang.code}
                   type="button"
                   onClick={() => setLanguage(lang.code)}
-                  className={`flex items-center justify-center text-sm px-4 py-2 border rounded-full transition-colors ${
-                    language === lang.code ? 'border-brand-green bg-brand-green text-brand-dark' : 'border-brand-dark/20 text-brand-dark/60'
+                  className={`text-2xl p-2 rounded-full transition-all ${
+                    language === lang.code ? 'bg-brand-green scale-110' : 'opacity-40 hover:opacity-70'
                   }`}
+                  aria-label={lang.label}
                 >
-                  <span className="font-medium">{lang.label}</span>
+                  {lang.flag}
                 </button>
               ))}
             </motion.div>
