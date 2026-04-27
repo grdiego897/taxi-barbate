@@ -1,4 +1,4 @@
-import { ArrowRight, Plane, Train, CarFront } from 'lucide-react';
+import { ArrowRight, CarFront, Plane, Sparkles, Train } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useLanguage } from '../contexts/LanguageContext';
 import {
@@ -20,68 +20,81 @@ export default function PopularRoutes() {
   const { t } = useLanguage();
 
   return (
-    <section id="popular-routes" className="py-24 bg-brand-white text-brand-dark relative z-10 border-t border-brand-dark/5">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="max-w-4xl mb-10">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-80px' }}
-            className="font-display font-medium text-3xl md:text-5xl tracking-tight mb-4"
-          >
-            {t.popularRoutes.title}
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-80px' }}
-            transition={{ delay: 0.1 }}
-            className="text-lg md:text-xl text-brand-dark/70 font-light leading-relaxed"
-          >
-            {t.popularRoutes.subtitle}
-          </motion.p>
+    <section
+      id="popular-routes"
+      className="py-24 md:py-28 bg-brand-white text-brand-dark relative z-10 border-t border-brand-dark/5 overflow-hidden"
+    >
+      <div className="absolute -bottom-20 -left-20 -z-0 h-80 w-80 rounded-full bg-brand-green/15 blur-[100px]" />
+
+      <div className="relative max-w-7xl mx-auto px-6 md:px-12">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+          <div className="max-w-2xl">
+            <motion.p
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-80px' }}
+              className="inline-flex items-center gap-2 mb-4 text-xs font-semibold tracking-[0.32em] uppercase text-brand-green-dark"
+            >
+              <Sparkles className="w-3.5 h-3.5" />
+              {t.popularRoutes.eyebrow}
+            </motion.p>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-80px' }}
+              className="font-display font-medium text-3xl md:text-5xl tracking-tight mb-4 leading-tight"
+            >
+              {t.popularRoutes.title}
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-80px' }}
+              transition={{ delay: 0.1 }}
+              className="text-base md:text-lg text-brand-dark/65 font-light leading-relaxed"
+            >
+              {t.popularRoutes.subtitle}
+            </motion.p>
+          </div>
         </div>
 
-        <div className="rounded-[1.75rem] border border-brand-dark/10 bg-linear-to-br from-brand-white to-brand-green/10 p-3 md:p-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2.5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {t.popularRoutes.items.map((route, index) => {
             const Icon = icons[index];
             const selection = routeSelections[index];
 
             return (
-              <motion.article
+              <motion.a
                 key={route.title}
+                href="#calculator"
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-40px' }}
-                transition={{ delay: index * 0.06 }}
-                className="group rounded-[1.25rem] border border-brand-dark/8 bg-brand-white/90 px-4 py-3 hover:border-brand-green-dark/20 hover:bg-brand-white transition-colors"
+                transition={{ delay: index * 0.06, duration: 0.5 }}
+                whileHover={{ y: -3 }}
+                onClick={() => {
+                  window.dispatchEvent(
+                    new CustomEvent<CalculatorRouteSelection>(CALCULATOR_ROUTE_SELECTED_EVENT, {
+                      detail: selection,
+                    }),
+                  );
+                }}
+                className="group relative flex items-center gap-4 rounded-[1.5rem] border border-brand-dark/10 bg-white px-5 py-4 shadow-[0_6px_20px_rgba(2,44,34,0.04)] hover:shadow-[0_18px_40px_rgba(2,44,34,0.09)] hover:border-brand-green-dark/30 transition-all duration-300 overflow-hidden"
               >
-                <a
-                  href="#calculator"
-                  className="flex items-center gap-3 min-w-0"
-                  onClick={() => {
-                    window.dispatchEvent(
-                      new CustomEvent<CalculatorRouteSelection>(CALCULATOR_ROUTE_SELECTED_EVENT, {
-                        detail: selection,
-                      }),
-                    );
-                  }}
-                >
-                  <div className="w-10 h-10 rounded-xl bg-brand-green/18 border border-brand-green/25 flex items-center justify-center shrink-0">
-                    <Icon className="w-4 h-4 text-brand-green-dark" />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <h3 className="font-display text-base md:text-lg font-medium text-brand-dark tracking-tight leading-snug">
-                      {route.title}
-                    </h3>
-                  </div>
-                  <ArrowRight className="w-4 h-4 text-brand-green-dark transition-transform group-hover:translate-x-0.5 shrink-0" />
-                </a>
-              </motion.article>
+                <div className="absolute inset-x-0 top-0 h-0.5 bg-linear-to-r from-brand-green via-brand-green-dark to-brand-green opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                <div className="w-11 h-11 rounded-xl bg-linear-to-br from-brand-green/30 to-brand-green/10 border border-brand-green/30 flex items-center justify-center shrink-0 transition-transform group-hover:rotate-[-6deg] group-hover:scale-105">
+                  <Icon className="w-5 h-5 text-brand-green-dark" />
+                </div>
+
+                <h3 className="font-display text-base md:text-lg font-medium text-brand-dark tracking-tight leading-snug flex-1">
+                  {route.title}
+                </h3>
+
+                <ArrowRight className="w-4 h-4 text-brand-green-dark shrink-0 transition-transform group-hover:translate-x-1" />
+              </motion.a>
             );
           })}
-          </div>
         </div>
       </div>
     </section>

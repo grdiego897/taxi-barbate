@@ -35,10 +35,10 @@ const TaxiIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const languages: { code: Language; label: string }[] = [
-  { code: 'es', label: 'ES' },
-  { code: 'en', label: 'EN' },
-  { code: 'de', label: 'DE' },
+const languages: { code: Language; label: string; flag: string }[] = [
+  { code: 'es', label: 'ES', flag: '🇪🇸' },
+  { code: 'en', label: 'EN', flag: '🇬🇧' },
+  { code: 'de', label: 'DE', flag: '🇩🇪' },
 ];
 
 export default function Navbar() {
@@ -67,7 +67,9 @@ export default function Navbar() {
     <>
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-300 ease-in-out ${
-          isScrolled ? 'bg-brand-white/90 backdrop-blur-md py-4 shadow-[0_4px_30px_rgba(0,0,0,0.05)]' : 'bg-transparent py-6'
+          isScrolled
+            ? 'bg-brand-white/85 backdrop-blur-xl py-3 shadow-[0_8px_30px_rgba(2,44,34,0.08)] border-b border-brand-dark/5'
+            : 'bg-transparent py-6'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center relative">

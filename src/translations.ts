@@ -20,6 +20,13 @@ export const translations = {
       subheadline: 'Taxi con reserva previa, precio cerrado y traslados a aeropuertos',
       cta: 'Llamar a Diego',
       whatsapp: 'WhatsApp',
+      liveStatus: 'Disponible para reservas',
+      scroll: 'Desliza',
+      trust: {
+        fixed: 'Precio cerrado',
+        booking: 'Reservas 24h',
+        payment: 'Tarjeta y Bizum',
+      },
     },
     serviceOverview: {
       eyebrow: 'Servicio de taxi en Barbate y La Janda',
@@ -41,6 +48,7 @@ export const translations = {
       goToPhoto: 'Ir a la foto',
     },
     benefits: {
+      eyebrow: 'Servicio profesional',
       title: '¿Por qué elegirnos?',
       subtitle:
         'Servicio local pensado para residentes, viajeros y turistas que necesitan un traslado comodo, claro y facil de reservar.',
@@ -87,10 +95,12 @@ export const translations = {
       },
     },
     popularRoutes: {
+      eyebrow: 'Rutas más reservadas',
       title: 'Rutas populares',
       subtitle:
         'Trayectos frecuentes desde Barbate y alrededores para reservas, vacaciones, conexiones con tren y salidas al aeropuerto.',
-      cta: 'Ver precio orientativo',
+      cta: 'Calcular',
+      popularBadge: 'Popular',
       items: [
         {
           title: 'Taxi Barbate - Aeropuerto de Jerez',
@@ -135,6 +145,9 @@ export const translations = {
       returnBase: 'Retorno a Barbate',
       totalDist: 'Total de kilometros',
       note: '* Precio aproximado. Contacte para precio exacto.',
+      swap: 'Invertir origen y destino',
+      bookCall: 'Reservar por teléfono',
+      bookWhatsapp: 'Reservar por WhatsApp',
       groups: {
         airports: 'Aeropuertos',
         stations: 'Estaciones de tren',
@@ -172,6 +185,9 @@ export const translations = {
       canos: 'Caños de Meca',
       zahora: 'Zahora',
       desc: 'Servicio habitual en Barbate y alrededores. Recogidas 24 horas con reserva previa y cobertura especializada en La Janda.',
+      featuredLabel: 'Zona destacada',
+      viewArea: 'Ver zona',
+      bookHere: 'Reservar aquí',
     },
     faq: {
       title: 'Preguntas frecuentes',
@@ -216,15 +232,34 @@ export const translations = {
       ],
     },
     contact: {
+      eyebrow: 'Hablemos',
       title: 'Contacto y reservas',
       subtitle: 'Reserva tu taxi, pide presupuesto y confirma tu traslado con antelacion.',
-      call: 'Llamanos',
+      call: 'Llámanos',
       email: 'Correo',
-      location: 'Ubicacion',
-      bookTitle: 'Reserva rapida',
+      location: 'Ubicación',
+      bookEyebrow: 'Disponibilidad inmediata',
+      bookTitle: 'Reserva rápida',
       bookDesc:
-        'Confirma por telefono o WhatsApp tu taxi en Barbate, Zahara de los Atunes, Caños de Meca o Zahora. Tambien organizamos traslados con precio cerrado a aeropuertos y estaciones.',
+        'Confirma por teléfono o WhatsApp tu taxi en Barbate, Zahara de los Atunes, Caños de Meca o Zahora. También organizamos traslados con precio cerrado a aeropuertos y estaciones.',
+      tags: {
+        advance: 'Reserva con antelación',
+        fixed: 'Precio cerrado',
+        payments: 'Tarjeta · Bizum · Apple Pay',
+      },
       footer: '© 2026 Taxi Barbate - Diego Gallardo. Todos los derechos reservados.',
+    },
+    fab: {
+      eyebrow: '¿Necesitas un taxi?',
+      message: 'Escríbenos por WhatsApp y confirmamos tu reserva en minutos.',
+      whatsapp: 'Abrir WhatsApp',
+      close: 'Cerrar',
+    },
+    footer: {
+      tagline: 'Taxi local con reserva previa, precio cerrado y traslados a aeropuertos en la Costa de la Luz.',
+      navigate: 'Navegación',
+      areasTitle: 'Zonas',
+      contact: 'Contacto',
     },
   },
   en: {
@@ -246,6 +281,13 @@ export const translations = {
       subheadline: 'Advance-booked taxi with fixed prices and airport transfers',
       cta: 'Call Diego',
       whatsapp: 'WhatsApp',
+      liveStatus: 'Available for bookings',
+      scroll: 'Scroll',
+      trust: {
+        fixed: 'Fixed price',
+        booking: '24h booking',
+        payment: 'Card & Bizum',
+      },
     },
     serviceOverview: {
       eyebrow: 'Taxi service in Barbate and La Janda',
@@ -267,6 +309,7 @@ export const translations = {
       goToPhoto: 'Go to photo',
     },
     benefits: {
+      eyebrow: 'Professional service',
       title: 'Why choose Taxi Barbate',
       subtitle:
         'A local taxi service for residents, holidaymakers and travellers who want a simple booking process and reliable pickup.',
@@ -313,10 +356,12 @@ export const translations = {
       },
     },
     popularRoutes: {
+      eyebrow: 'Most booked routes',
       title: 'Popular routes',
       subtitle:
         'Common transfers from Barbate and nearby areas for holidays, train connections and airport departures.',
-      cta: 'See estimated fare',
+      cta: 'Calculate',
+      popularBadge: 'Popular',
       items: [
         {
           title: 'Barbate taxi to Jerez Airport',
@@ -361,6 +406,9 @@ export const translations = {
       returnBase: 'Return to Barbate',
       totalDist: 'Total kilometres',
       note: '* Approximate price. Please contact us for the exact fare.',
+      swap: 'Swap origin and destination',
+      bookCall: 'Book by phone',
+      bookWhatsapp: 'Book on WhatsApp',
       groups: {
         airports: 'Airports',
         stations: 'Train stations',
@@ -398,6 +446,9 @@ export const translations = {
       canos: 'Caños de Meca',
       zahora: 'Zahora',
       desc: 'Regular service in Barbate and nearby areas. Pickups are available 24/7 with advance booking and local knowledge of La Janda.',
+      featuredLabel: 'Featured area',
+      viewArea: 'View area',
+      bookHere: 'Book a ride here',
     },
     faq: {
       title: 'Frequently asked questions',
@@ -441,15 +492,34 @@ export const translations = {
       ],
     },
     contact: {
+      eyebrow: 'Get in touch',
       title: 'Contact and bookings',
       subtitle: 'Book your taxi, ask for a quote and confirm your transfer in advance.',
       call: 'Call us',
       email: 'Email',
       location: 'Location',
+      bookEyebrow: 'Available now',
       bookTitle: 'Quick booking',
       bookDesc:
         'Book by phone or WhatsApp for taxi services in Barbate, Zahara de los Atunes, Caños de Meca or Zahora. We also organise fixed-price transfers to airports and stations.',
+      tags: {
+        advance: 'Advance booking',
+        fixed: 'Fixed price',
+        payments: 'Card · Bizum · Apple Pay',
+      },
       footer: '© 2026 Taxi Barbate - Diego Gallardo. All rights reserved.',
+    },
+    fab: {
+      eyebrow: 'Need a taxi?',
+      message: 'Send us a WhatsApp message and we will confirm your booking in minutes.',
+      whatsapp: 'Open WhatsApp',
+      close: 'Close',
+    },
+    footer: {
+      tagline: 'Local taxi by advance booking with fixed prices and airport transfers across the Costa de la Luz.',
+      navigate: 'Navigation',
+      areasTitle: 'Areas',
+      contact: 'Contact',
     },
   },
   de: {
@@ -471,6 +541,13 @@ export const translations = {
       subheadline: 'Taxi mit Vorbestellung, Festpreis und Flughafen-Transfers',
       cta: 'Diego anrufen',
       whatsapp: 'WhatsApp',
+      liveStatus: 'Buchungen möglich',
+      scroll: 'Scrollen',
+      trust: {
+        fixed: 'Festpreis',
+        booking: '24h Buchung',
+        payment: 'Karte & Bizum',
+      },
     },
     serviceOverview: {
       eyebrow: 'Taxi-Service in Barbate und La Janda',
@@ -492,6 +569,7 @@ export const translations = {
       goToPhoto: 'Zum Foto',
     },
     benefits: {
+      eyebrow: 'Professioneller Service',
       title: 'Warum Taxi Barbate',
       subtitle:
         'Ein lokaler Fahrdienst fur Einwohner, Urlauber und Reisende, die einfach buchen und zuverlassig abgeholt werden mochten.',
@@ -538,10 +616,12 @@ export const translations = {
       },
     },
     popularRoutes: {
+      eyebrow: 'Meistgebuchte Strecken',
       title: 'Beliebte Strecken',
       subtitle:
         'Haufig gebuchte Transfers ab Barbate und Umgebung fur Urlaub, Zuganschlusse und Flughafenfahrten.',
-      cta: 'Ungefahren Preis ansehen',
+      cta: 'Berechnen',
+      popularBadge: 'Beliebt',
       items: [
         {
           title: 'Taxi Barbate - Flughafen Jerez',
@@ -586,6 +666,9 @@ export const translations = {
       returnBase: 'Ruckfahrt nach Barbate',
       totalDist: 'Gesamtkilometer',
       note: '* Ungefahrer Preis. Bitte kontaktieren Sie uns fur den genauen Fahrpreis.',
+      swap: 'Abhol- und Zielort tauschen',
+      bookCall: 'Telefonisch buchen',
+      bookWhatsapp: 'Per WhatsApp buchen',
       groups: {
         airports: 'Flughafen',
         stations: 'Bahnhofe',
@@ -623,6 +706,9 @@ export const translations = {
       canos: 'Caños de Meca',
       zahora: 'Zahora',
       desc: 'Regelmassiger Service in Barbate und Umgebung. Abholungen rund um die Uhr mit Vorbestellung und lokaler Erfahrung in La Janda.',
+      featuredLabel: 'Hervorgehoben',
+      viewArea: 'Gebiet ansehen',
+      bookHere: 'Hier buchen',
     },
     faq: {
       title: 'Haufige Fragen',
@@ -666,15 +752,34 @@ export const translations = {
       ],
     },
     contact: {
+      eyebrow: 'Sprechen wir',
       title: 'Kontakt und Reservierung',
       subtitle: 'Reservieren Sie Ihr Taxi, fragen Sie nach einem Preis und bestatigen Sie Ihre Fahrt im Voraus.',
       call: 'Anrufen',
       email: 'E-Mail',
       location: 'Standort',
+      bookEyebrow: 'Jetzt verfügbar',
       bookTitle: 'Schnelle Reservierung',
       bookDesc:
         'Reservieren Sie telefonisch oder per WhatsApp fur Barbate, Zahara de los Atunes, Caños de Meca oder Zahora. Wir organisieren auch Festpreis-Transfers zu Flughafen und Bahnhof.',
+      tags: {
+        advance: 'Vorbestellung',
+        fixed: 'Festpreis',
+        payments: 'Karte · Bizum · Apple Pay',
+      },
       footer: '© 2026 Taxi Barbate - Diego Gallardo. Alle Rechte vorbehalten.',
+    },
+    fab: {
+      eyebrow: 'Taxi gesucht?',
+      message: 'Schreiben Sie uns per WhatsApp und wir bestätigen die Buchung in wenigen Minuten.',
+      whatsapp: 'WhatsApp öffnen',
+      close: 'Schließen',
+    },
+    footer: {
+      tagline: 'Lokales Taxi mit Vorbestellung, Festpreis und Flughafentransfers an der Costa de la Luz.',
+      navigate: 'Navigation',
+      areasTitle: 'Gebiete',
+      contact: 'Kontakt',
     },
   },
 } as const;

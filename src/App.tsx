@@ -10,12 +10,14 @@ import PricingCalculator from './components/PricingCalculator';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollProgress from './components/ScrollProgress';
 
 export default function App() {
   return (
     <LanguageProvider>
       <div className="min-h-screen font-sans selection:bg-brand-green selection:text-brand-dark">
         <SeoHead />
+        <ScrollProgress />
         <Navbar />
         <main>
           <Hero />
