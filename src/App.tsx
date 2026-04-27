@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Navbar from './components/Navbar';
 import SeoHead from './components/SeoHead';
 import Hero from './components/Hero';
-import ServiceOverview from './components/ServiceOverview';
-import PopularRoutes from './components/PopularRoutes';
-import Areas from './components/Areas';
-import PricingCalculator from './components/PricingCalculator';
-import FAQ from './components/FAQ';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
 import ScrollProgress from './components/ScrollProgress';
+
+const ServiceOverview = lazy(() => import('./components/ServiceOverview'));
+const PopularRoutes = lazy(() => import('./components/PopularRoutes'));
+const PricingCalculator = lazy(() => import('./components/PricingCalculator'));
+const Areas = lazy(() => import('./components/Areas'));
+const FAQ = lazy(() => import('./components/FAQ'));
+const Contact = lazy(() => import('./components/Contact'));
+const Footer = lazy(() => import('./components/Footer'));
+
+const SectionFallback = () => <div className="h-72 md:h-96" aria-hidden="true" />;
 
 export default function App() {
   return (
@@ -21,14 +24,18 @@ export default function App() {
         <Navbar />
         <main>
           <Hero />
-          <ServiceOverview />
-          <PopularRoutes />
-          <PricingCalculator />
-          <Areas />
-          <FAQ />
-          <Contact />
+          <Suspense fallback={<SectionFallback />}>
+            <ServiceOverview />
+            <PopularRoutes />
+            <PricingCalculator />
+            <Areas />
+            <FAQ />
+            <Contact />
+          </Suspense>
         </main>
-        <Footer />
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
       </div>
     </LanguageProvider>
   );

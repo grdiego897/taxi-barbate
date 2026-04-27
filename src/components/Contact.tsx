@@ -2,7 +2,9 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowUpRight, MapPin, MessageCircle, Phone } from 'lucide-react';
 import { PHONE_DISPLAY, PHONE_NUMBER, WHATSAPP_URL } from '../config/site';
-import taxiSideImage from '../../img/taxiside.png';
+import taxiSide480 from '../../img/optimized/taxiside-480.webp';
+import taxiSide720 from '../../img/optimized/taxiside-720.webp';
+import taxiSide1024 from '../../img/optimized/taxiside-1024.webp';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Contact() {
@@ -30,8 +32,8 @@ export default function Contact() {
       id="contact"
       className="py-24 md:py-28 bg-linear-to-br from-brand-green via-brand-green to-brand-green/85 relative z-10 border-t border-brand-dark/5 overflow-hidden"
     >
-      <div className="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-white/30 blur-[120px]" />
-      <div className="absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-brand-green-dark/25 blur-[140px]" />
+      <div className="hidden md:block absolute -top-40 -left-40 h-96 w-96 rounded-full bg-white/30 blur-[120px]" />
+      <div className="hidden md:block absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-brand-green-dark/25 blur-[140px]" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
@@ -111,8 +113,14 @@ export default function Contact() {
             className="lg:col-span-7 flex items-center justify-center"
           >
             <img
-              src={taxiSideImage}
+              src={taxiSide720}
+              srcSet={`${taxiSide480} 480w, ${taxiSide720} 720w, ${taxiSide1024} 1024w`}
+              sizes="(min-width: 1024px) 720px, 90vw"
+              width={720}
+              height={480}
               alt="Taxi Barbate"
+              loading="lazy"
+              decoding="async"
               className="w-full object-contain drop-shadow-2xl"
             />
           </motion.div>

@@ -47,11 +47,17 @@ export default function Navbar() {
   const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setIsScrolled(window.scrollY > 50);
+        ticking = false;
+      });
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -68,7 +74,7 @@ export default function Navbar() {
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-300 ease-in-out ${
           isScrolled
-            ? 'bg-brand-white/85 backdrop-blur-xl py-3 shadow-[0_8px_30px_rgba(2,44,34,0.08)] border-b border-brand-dark/5'
+            ? 'bg-brand-white/95 md:bg-brand-white/85 md:backdrop-blur-xl py-3 shadow-[0_8px_30px_rgba(2,44,34,0.08)] border-b border-brand-dark/5'
             : 'bg-transparent py-6'
         }`}
       >
@@ -122,7 +128,7 @@ export default function Navbar() {
 
           <button
             type="button"
-            className="lg:hidden text-brand-dark z-50 relative p-2 bg-brand-white/50 backdrop-blur-sm rounded-full border border-brand-dark/10"
+            className="lg:hidden text-brand-dark z-50 relative p-2 bg-brand-white/80 rounded-full border border-brand-dark/10"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle Menu"
           >

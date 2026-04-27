@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(node scripts/optimize-images.mjs)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(timeout 15 npx vite build --mode=development)"
+    ]
+  }
+}

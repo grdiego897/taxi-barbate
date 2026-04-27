@@ -219,7 +219,7 @@ export default function PricingCalculator() {
       id="calculator"
       className="py-24 md:py-28 bg-linear-to-b from-brand-white via-brand-green/8 to-brand-white text-brand-dark relative z-30 border-t border-brand-dark/5 overflow-hidden"
     >
-      <div className="absolute -top-40 right-1/2 translate-x-1/2 -z-0 h-96 w-[40rem] rounded-full bg-brand-green/20 blur-[140px]" />
+      <div className="hidden md:block absolute -top-40 right-1/2 translate-x-1/2 -z-0 h-96 w-[40rem] rounded-full bg-brand-green/20 blur-[140px]" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center">
         <motion.div
@@ -487,36 +487,3 @@ export default function PricingCalculator() {
   );
 }
 
-function BreakdownRow({
-  label,
-  value,
-  icon,
-  highlight,
-}: {
-  label: string;
-  value: string;
-  icon: 'origin' | 'trip' | 'return' | 'total';
-  highlight?: boolean;
-}) {
-  const Icon = icon === 'origin' ? MapPin : icon === 'trip' ? ArrowRight : icon === 'return' ? Route : Calculator;
-
-  return (
-    <div
-      className={`flex items-center justify-between gap-3 rounded-lg px-3 py-2.5 ${
-        highlight ? 'bg-brand-green/15 border border-brand-green-dark/20' : 'bg-white/70'
-      }`}
-    >
-      <div className="flex items-center gap-2 text-xs font-medium text-brand-dark/70">
-        <Icon className="w-3.5 h-3.5 text-brand-green-dark" />
-        <span>{label}</span>
-      </div>
-      <span
-        className={`text-sm tabular-nums ${
-          highlight ? 'font-bold text-brand-dark' : 'font-semibold text-brand-dark/85'
-        }`}
-      >
-        {value}
-      </span>
-    </div>
-  );
-}

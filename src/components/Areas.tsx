@@ -1,8 +1,14 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import canosImage from '../../img/canos.png';
-import zaharaImage from '../../img/zahara.png';
-import zahoraImage from '../../img/zahora.png';
+import canos240 from '../../img/optimized/canos-240.webp';
+import canos384 from '../../img/optimized/canos-384.webp';
+import canos512 from '../../img/optimized/canos-512.webp';
+import zahara240 from '../../img/optimized/zahara-240.webp';
+import zahara384 from '../../img/optimized/zahara-384.webp';
+import zahara512 from '../../img/optimized/zahara-512.webp';
+import zahora240 from '../../img/optimized/zahora-240.webp';
+import zahora384 from '../../img/optimized/zahora-384.webp';
+import zahora512 from '../../img/optimized/zahora-512.webp';
 import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Areas() {
@@ -10,9 +16,9 @@ export default function Areas() {
 
   const areasList = [t.areas.barbate, t.areas.zahara, t.areas.canos, t.areas.zahora];
   const featuredAreas = [
-    { name: t.areas.canos, image: canosImage },
-    { name: t.areas.zahara, image: zaharaImage },
-    { name: t.areas.zahora, image: zahoraImage },
+    { name: t.areas.canos, src: canos384, srcSet: `${canos240} 240w, ${canos384} 384w, ${canos512} 512w` },
+    { name: t.areas.zahara, src: zahara384, srcSet: `${zahara240} 240w, ${zahara384} 384w, ${zahara512} 512w` },
+    { name: t.areas.zahora, src: zahora384, srcSet: `${zahora240} 240w, ${zahora384} 384w, ${zahora512} 512w` },
   ];
 
   return (
@@ -46,7 +52,17 @@ export default function Areas() {
                   className="flex flex-1 min-w-0 items-center sm:flex-none"
                 >
                   <div className="w-full aspect-square rounded-[1.75rem] border-2 border-brand-green shadow-[0_10px_30px_rgba(2,44,34,0.08)] overflow-hidden sm:w-32 sm:h-32">
-                    <img src={area.image} alt={area.name} className="w-full h-full object-cover" />
+                    <img
+                      src={area.src}
+                      srcSet={area.srcSet}
+                      sizes="(min-width: 640px) 128px, 30vw"
+                      width={384}
+                      height={384}
+                      alt={area.name}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </motion.div>
               ))}

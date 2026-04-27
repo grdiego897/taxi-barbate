@@ -12,7 +12,7 @@ export default function FAQ() {
       id="faq"
       className="py-24 md:py-28 bg-brand-white text-brand-dark relative z-10 border-t border-brand-dark/5 overflow-hidden"
     >
-      <div className="absolute -top-32 -right-20 -z-0 h-80 w-80 rounded-full bg-brand-green/15 blur-[100px]" />
+      <div className="hidden md:block absolute -top-32 -right-20 -z-0 h-80 w-80 rounded-full bg-brand-green/15 blur-[100px]" />
 
       <div className="relative max-w-5xl mx-auto px-6 md:px-12">
         <div className="text-center max-w-3xl mx-auto mb-14">

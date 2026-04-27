@@ -24,7 +24,7 @@ export default function PopularRoutes() {
       id="popular-routes"
       className="py-24 md:py-28 bg-brand-white text-brand-dark relative z-10 border-t border-brand-dark/5 overflow-hidden"
     >
-      <div className="absolute -bottom-20 -left-20 -z-0 h-80 w-80 rounded-full bg-brand-green/15 blur-[100px]" />
+      <div className="hidden md:block absolute -bottom-20 -left-20 -z-0 h-80 w-80 rounded-full bg-brand-green/15 blur-[100px]" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">

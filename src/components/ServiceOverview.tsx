@@ -20,7 +20,7 @@ export default function ServiceOverview() {
       className="relative isolate overflow-hidden border-t border-brand-dark/5 bg-white py-20 md:py-28"
     >
       <div className="absolute inset-x-0 top-0 -z-10 h-px bg-linear-to-r from-transparent via-brand-green-dark/30 to-transparent" />
-      <div className="absolute -top-32 left-1/2 -translate-x-1/2 -z-10 h-72 w-[42rem] rounded-full bg-brand-green/25 blur-[120px]" />
+      <div className="hidden md:block absolute -top-32 left-1/2 -translate-x-1/2 -z-10 h-72 w-[42rem] rounded-full bg-brand-green/25 blur-[120px]" />
 
       <div className="relative mx-auto max-w-7xl px-6 md:px-12">
         <motion.div
