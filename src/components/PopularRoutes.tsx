@@ -27,36 +27,26 @@ export default function PopularRoutes() {
       <div className="hidden md:block absolute -bottom-20 -left-20 -z-0 h-80 w-80 rounded-full bg-brand-green/15 blur-[100px]" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+          className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10"
+        >
           <div className="max-w-2xl">
-            <motion.p
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-80px' }}
-              className="inline-flex items-center gap-2 mb-4 text-xs font-semibold tracking-[0.32em] uppercase text-brand-green-dark"
-            >
+            <p className="inline-flex items-center gap-2 mb-4 text-xs font-semibold tracking-[0.32em] uppercase text-brand-green-dark">
               <Sparkles className="w-3.5 h-3.5" />
               {t.popularRoutes.eyebrow}
-            </motion.p>
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-80px' }}
-              className="font-display font-medium text-3xl md:text-5xl tracking-tight mb-4 leading-tight"
-            >
+            </p>
+            <h2 className="font-display font-medium text-3xl md:text-5xl tracking-tight mb-4 leading-tight">
               {t.popularRoutes.title}
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-80px' }}
-              transition={{ delay: 0.1 }}
-              className="text-base md:text-lg text-brand-dark/65 font-light leading-relaxed"
-            >
+            </h2>
+            <p className="text-base md:text-lg text-brand-dark/65 font-light leading-relaxed">
               {t.popularRoutes.subtitle}
-            </motion.p>
+            </p>
           </div>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {t.popularRoutes.items.map((route, index) => {
@@ -67,10 +57,10 @@ export default function PopularRoutes() {
               <motion.a
                 key={route.title}
                 href="#calculator"
-                initial={{ opacity: 0, y: 24 }}
+                initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-40px' }}
-                transition={{ delay: index * 0.06, duration: 0.5 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ delay: index * 0.04, duration: 0.4, ease: 'easeOut' }}
                 whileHover={{ y: -3 }}
                 onClick={() => {
                   window.dispatchEvent(

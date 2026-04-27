@@ -23,12 +23,13 @@ export default function ServiceOverview() {
       <div className="hidden md:block absolute -top-32 left-1/2 -translate-x-1/2 -z-10 h-72 w-[42rem] rounded-full bg-brand-green/25 blur-[120px]" />
 
       <div className="relative mx-auto max-w-7xl px-6 md:px-12">
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-40px' }}
-        >
-          <div className="mx-auto mb-12 max-w-3xl text-center md:mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+            className="mx-auto mb-12 max-w-3xl text-center md:mb-16"
+          >
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.32em] text-brand-green-dark">
               {t.benefits.eyebrow}
             </p>
@@ -38,7 +39,7 @@ export default function ServiceOverview() {
             <p className="mx-auto mt-5 max-w-2xl text-base font-light leading-relaxed text-brand-dark/70 md:text-lg">
               {t.benefits.subtitle}
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {t.benefits.items.map((item, index) => {
@@ -48,10 +49,10 @@ export default function ServiceOverview() {
                 <motion.article
                   key={item.title}
                   aria-label={`${item.title}. ${item.desc}`}
-                  initial={{ opacity: 0, y: 24 }}
+                  initial={{ opacity: 0, y: 16 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-40px' }}
-                  transition={{ delay: index * 0.06, duration: 0.5 }}
+                  viewport={{ once: true, amount: 0.15 }}
+                  transition={{ delay: index * 0.04, duration: 0.4, ease: 'easeOut' }}
                   whileHover={{ y: -4 }}
                   className="group relative overflow-hidden rounded-[1.5rem] border border-brand-dark/8 bg-linear-to-b from-white to-brand-green/5 p-6 shadow-[0_8px_24px_rgba(2,44,34,0.04)] transition-all duration-300 hover:border-brand-green-dark/30 hover:shadow-[0_18px_40px_rgba(2,44,34,0.08)] md:p-7"
                 >
@@ -82,7 +83,6 @@ export default function ServiceOverview() {
               );
             })}
           </div>
-        </motion.div>
       </div>
     </section>
   );
