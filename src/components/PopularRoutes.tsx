@@ -28,9 +28,9 @@ export default function PopularRoutes() {
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12">
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
           className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10"
         >
@@ -57,9 +57,9 @@ export default function PopularRoutes() {
               <motion.a
                 key={route.title}
                 href="#calculator"
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.15 }}
+                initial={{ y: 20 }}
+                whileInView={{ y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
                 transition={{ delay: index * 0.04, duration: 0.4, ease: 'easeOut' }}
                 whileHover={{ y: -3 }}
                 onClick={() => {

@@ -24,9 +24,9 @@ export default function ServiceOverview() {
 
       <div className="relative mx-auto max-w-7xl px-6 md:px-12">
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
             className="mx-auto mb-12 max-w-3xl text-center md:mb-16"
           >
@@ -49,12 +49,11 @@ export default function ServiceOverview() {
                 <motion.article
                   key={item.title}
                   aria-label={`${item.title}. ${item.desc}`}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.15 }}
+                  initial={{ y: 20 }}
+                  whileInView={{ y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
                   transition={{ delay: index * 0.04, duration: 0.4, ease: 'easeOut' }}
-                  whileHover={{ y: -4 }}
-                  className="group relative overflow-hidden rounded-[1.5rem] border border-brand-dark/8 bg-linear-to-b from-white to-brand-green/5 p-6 shadow-[0_8px_24px_rgba(2,44,34,0.04)] transition-all duration-300 hover:border-brand-green-dark/30 hover:shadow-[0_18px_40px_rgba(2,44,34,0.08)] md:p-7"
+                  className="group relative overflow-hidden rounded-[1.5rem] border border-brand-dark/8 bg-linear-to-b from-white to-brand-green/5 p-6 shadow-[0_8px_24px_rgba(2,44,34,0.04)] transition-all duration-300 hover:border-brand-green-dark/30 hover:shadow-[0_18px_40px_rgba(2,44,34,0.08)] md:p-7 hover:-translate-y-1"
                 >
                   <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-brand-green/0 blur-2xl transition-all duration-500 group-hover:bg-brand-green/40" />
 

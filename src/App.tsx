@@ -3,10 +3,10 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import Navbar from './components/Navbar';
 import SeoHead from './components/SeoHead';
 import Hero from './components/Hero';
+import ServiceOverview from './components/ServiceOverview';
+import PopularRoutes from './components/PopularRoutes';
 import ScrollProgress from './components/ScrollProgress';
 
-const ServiceOverview = lazy(() => import('./components/ServiceOverview'));
-const PopularRoutes = lazy(() => import('./components/PopularRoutes'));
 const PricingCalculator = lazy(() => import('./components/PricingCalculator'));
 const Areas = lazy(() => import('./components/Areas'));
 const FAQ = lazy(() => import('./components/FAQ'));
@@ -24,9 +24,9 @@ export default function App() {
         <Navbar />
         <main>
           <Hero />
+          <ServiceOverview />
+          <PopularRoutes />
           <Suspense fallback={<SectionFallback />}>
-            <ServiceOverview />
-            <PopularRoutes />
             <PricingCalculator />
             <Areas />
             <FAQ />
